@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>CSS tutorial</h1>
+    <hr />
+
+    <h3>Positions</h3>
+
+    <div class="positions-container">
+        <h3 class="static-description">Postion <b>STATIC</b> is the default position for all the elements, no TRBL is
+            applicable.</h3>
+        <div class="static item">static</div>
+        <hr />
+        <h3>When Postion <b>ABSOLUTE</b> is applied, The element is moved from its normal position and along with that
+            it will not have the existing reserved space. However; if an absolute positioned element has no positioned
+            ancestors/parents, it uses the document body, and moves along with page scrolling. and TRBL is applicable
+        </h3>
+        <div class="absolute item">absolute
+            <div class="p-absolute">Relative to absolute parent</div>
+        </div>
+        <hr />
+        <h3>When Postion <b>RELATIVE</b> is applied, The element can moved from its normal position but will still have
+            the existing reserved space, relative element does not relate to the parent container or the viewport. It’s
+            always relative to the element's original position in the document flow..TRBL is applicable</h3>
+        <div class="relative item">relative
+
+            <div class="p-relative">Relative to relative parent</div>
+
+        </div>
+        <hr />
+        <h3>When Postion <b>FIXED</b> is applied, The fixed element is postioned relative to the viewport, fixed element
+            is always relative to the viewport, not the parent element.It will stay at the same place even when
+            scrolled,TRBL is applicable</h3>
+        <div class="fixed item">fixed</div>
+        <hr />
+        <h3>When Postion <b>STICKY</b> is applied, element is positioned based on the user's scroll position ,TRBL is applicable</h3>
+        <div class="sticky item">sticky</div>
+        <br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <hr />
+    </div>
+
+
+</body>
+
+</html>
