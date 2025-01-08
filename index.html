@@ -19,21 +19,26 @@
     <h3>Positions</h3>
 
     <div class="positions-container">
-        <h3 class="static-description">Postion <b>STATIC</b> is the default position for all the elements, no TRBL is
+        <h3>Postion <b>STATIC</b> is the default position for all the elements, no TRBL is
             applicable.</h3>
         <div class="static item">static</div>
         <hr />
         <h3>When Postion <b>ABSOLUTE</b> is applied, The element is moved from its normal position and along with that
             it will not have the existing reserved space. However; if an absolute positioned element has no positioned
-            ancestors/parents, it uses the document body, and moves along with page scrolling. and TRBL is applicable
+            ancestors/parents, it uses the document body, and moves along with page scrolling. and TRBL is applicable.
+            <p class="static-description">Example: Position Absolute box has moved to top because it is relative to the
+                document body since its parent is not having any postion value. </p>
         </h3>
+
         <div class="absolute item">absolute
             <div class="p-absolute">Relative to absolute parent</div>
         </div>
         <hr />
         <h3>When Postion <b>RELATIVE</b> is applied, The element can moved from its normal position but will still have
             the existing reserved space, relative element does not relate to the parent container or the viewport. It’s
-            always relative to the element's original position in the document flow..TRBL is applicable</h3>
+            always relative to the element's original position in the document flow..TRBL is applicable
+            <p class="static-description">Example: Position Relative box has moved bit a side in this but it still has the space of the normal flow.</p>
+        </h3>
         <div class="relative item">relative
 
             <div class="p-relative">Relative to relative parent</div>
@@ -42,16 +47,22 @@
         <hr />
         <h3>When Postion <b>FIXED</b> is applied, The fixed element is postioned relative to the viewport, fixed element
             is always relative to the viewport, not the parent element.It will stay at the same place even when
-            scrolled,TRBL is applicable</h3>
+            scrolled,TRBL is applicable
+        
+        </h3>
         <div class="fixed item">fixed</div>
         <hr />
-        <h3>When Postion <b>STICKY</b> is applied, Sticky element needs to be in a scrollable container, For the sticky element to work, it must be contained within a scrollable ancestor. Once the ancestor container (which is scrollable) is moved out of the view the sticky element will behave like a normal element ie., Sticky element is relative to the ancestor scroll,TRBL is
-            applicable</h3>
+        <h3>When Postion <b>STICKY</b> is applied, Sticky element needs to be in a scrollable container, For the sticky
+            element to work, it must be contained within a scrollable ancestor. Once the ancestor container (which is
+            scrollable) is moved out of the view the sticky element will behave like a normal element ie., Sticky
+            element is relative to the ancestor scroll,TRBL is
+            applicable
+        
+            <p class="static-description">Example: When scrolled, we can see that sticky box is scrolled and stays at the top of the page until its parent (positions-container) element is in the view, Once its parent element is moved out of the view we see that the sticky element goes away with the normal flow. So this explains that sticky element is relative to the scrollable ancestor</p>
+        
+        </h3>
         <div class="sticky item">sticky</div>
         <hr />
-
-
-
     </div>
 
 

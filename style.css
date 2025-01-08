@@ -70,13 +70,17 @@ body {
 }
 
 
-.sticky{
+.sticky {
     position: sticky;
     top: 0px;
 }
 
+.static-description {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
 
-
-.spacing-block{
+.spacing-block {
     height: 200vh;
 }
