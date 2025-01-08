@@ -12,6 +12,7 @@ body {
     min-width: 65%;
     max-width: 80%;
     /* position: relative; */
+    height: 300vh;
 }
 
 .positions-container .item {
