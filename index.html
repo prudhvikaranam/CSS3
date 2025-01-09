@@ -20,12 +20,24 @@
     <div class="containers-checkboxes">
         <h2>View in Deaktop/Laptops to better understand and playaround the concepts</h2>
         <label>
-            <input type="checkbox" name="postions" value="postions" id="postionsInputCheckbox" onchange="onChangeContainer('postions')" checked>
+            <input type="checkbox" name="postions" value="postions" id="postionsInputCheckbox"
+                onchange="onChangeContainer('postions')">
             Postions
         </label>
+
+
+
+
+        <label>
+            <input type="checkbox" name="flexBox" value="flexBox" id="flexBoxInputCheckbox"
+                onchange="onChangeContainer('flexBoxs')">
+            Flex Box
+        </label>
+
+
     </div>
 
-    <div class="postions-block" id="postions-block">
+    <div class="postions-block hide" id="postions-block">
         <h3>Positions</h3>
 
         <div class="positions-container">
@@ -115,6 +127,53 @@
             repellat, veniam exercitationem?
         </div>
     </div>
+
+    <hr />
+
+
+
+
+
+    <div class="flexBoxes-block" id="postions-block">
+        <h1>Examples are helpful to understand flex-grow, flex-srink, flex-basis and flex property</h1>
+        <div class="flex-container">
+            <div class="align-center">flex-shrink is used to shrink the child items, By default flex-shrink value is 1.<br/> In the below example, All items are given flex-shrink value as 0, for item-1 we gave value as 1 so it will shrink and for item-3 value is 2 so it will shrink twice as item-1. <br />Try reducing/increasing the window size to see above effect.
+                <br />
+                <br />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 (Default)</td>
+                            <td>Items will shrink</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>Will not Shrink</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Will Shrink as twice much as compared to others</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div class="first-container">
+                <div class="item item-1">Item 1</div>
+                <div class="item item-2">Item 2</div>
+                <div class="item item-3">Item 3</div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="script.js"></script>
 

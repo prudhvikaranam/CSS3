@@ -7,12 +7,25 @@ body {
     font-family: "Open Sans", serif;
 }
 
-.containers-checkboxes{
-    padding-bottom: 50px;
-    border-bottom: 2px solid #555;
+.align-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.postions-block.hide{
+.containers-checkboxes {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #555;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+.postions-block.hide,
+.flexBoxes-block.hide {
     display: none;
 }
 
@@ -55,6 +68,7 @@ body {
     top: 0px;
     right: 100px;
     left: 100px;
+    z-index: 100;
 }
 
 .p-absolute {
@@ -82,6 +96,7 @@ body {
 .sticky {
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 .static-description {
@@ -95,6 +110,61 @@ body {
 }
 
 
-.show-postions{
+.show-postions {
     display: none;
+}
+
+
+
+
+/* Code for Flex-Boxes */
+
+.first-container {
+    display: flex;
+    width: 50%;
+    border: 1px solid #5554;
+    margin: auto;
+    /* flex-wrap: wrap; */
+}
+
+.flex-container .item {
+    width: 150px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+}
+
+.item-1{
+    flex-shrink: 1 !important;
+}
+
+.item-3{
+    flex-shrink: 2 !important;
+}
+
+
+
+
+
+
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    /* Merges table borders */
+}
+
+th,
+td {
+    border: 1px solid black;
+    /* Adds borders to table cells */
+    padding: 8px;
+    /* Adds space inside cells */
+    text-align: center;
+    /* Centers text inside cells */
 }

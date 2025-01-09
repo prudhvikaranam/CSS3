@@ -6,5 +6,12 @@ const onChangeContainer = (containerId) => {
         } else {
             document.getElementsByClassName('postions-block')[0].classList.remove(`hide`);
         }
+    }else if(containerId === 'flexBoxs'){
+        const postionsInputContainer = document.getElementById('flexBoxInputCheckbox');
+        if (!postionsInputContainer.checked) {
+            document.getElementsByClassName('flexBoxes-block')[0].classList.add(`hide`);
+        } else {
+            document.getElementsByClassName('flexBoxes-block')[0].classList.remove(`hide`);
+        }
     }
 }
