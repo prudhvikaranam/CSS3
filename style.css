@@ -7,6 +7,15 @@ body {
     font-family: "Open Sans", serif;
 }
 
+.containers-checkboxes{
+    padding-bottom: 50px;
+    border-bottom: 2px solid #555;
+}
+
+.postions-block.hide{
+    display: none;
+}
+
 .positions-container {
     border: 1px solid #555;
     min-width: 65%;
@@ -83,4 +92,9 @@ body {
 
 .spacing-block {
     height: 200vh;
+}
+
+
+.show-postions{
+    display: none;
 }
