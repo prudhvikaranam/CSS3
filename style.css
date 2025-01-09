@@ -15,6 +15,20 @@ body {
     text-align: center;
 }
 
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
 .containers-checkboxes {
     padding-bottom: 50px;
     border-bottom: 2px solid #555;
@@ -28,6 +42,11 @@ body {
 .flexBoxes-block.hide {
     display: none;
 }
+
+
+/* Code for Postion-Boxes */
+
+
 
 .positions-container {
     border: 1px solid #555;
@@ -119,7 +138,16 @@ body {
 
 /* Code for Flex-Boxes */
 
-.first-container {
+
+
+.flex-container .align-center:nth-child(even) {
+    background-color: #f9fbf1;
+}
+
+/* Flex-shrink */
+
+
+.first-container, .second-container, .third-container {
     display: flex;
     width: 50%;
     border: 1px solid #5554;
@@ -127,7 +155,7 @@ body {
     /* flex-wrap: wrap; */
 }
 
-.flex-container .item {
+.first-container .item {
     width: 150px;
     height: 100px;
     background-color: coral;
@@ -138,33 +166,45 @@ body {
     flex-shrink: 0;
 }
 
-.item-1{
+.first-container .item-1 {
     flex-shrink: 1 !important;
 }
 
-.item-3{
+.first-container .item-3 {
     flex-shrink: 2 !important;
 }
 
 
+/* Flex-grow */
 
-
-
-
-
-
-table {
-    width: 50%;
-    border-collapse: collapse;
-    /* Merges table borders */
+.second-container .item {
+    width: 150px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
 }
 
-th,
-td {
-    border: 1px solid black;
-    /* Adds borders to table cells */
-    padding: 8px;
-    /* Adds space inside cells */
+.second-container .item-1{
+    flex-grow: 2;
+}
+
+
+.second-container .item-2{
+    flex-grow: 1;
+}
+
+
+/* Flex-basis */
+
+.third-container .item {
+    width: 150px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    margin: 10px;
     text-align: center;
-    /* Centers text inside cells */
+    line-height: 100px;
 }

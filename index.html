@@ -135,9 +135,20 @@
 
 
     <div class="flexBoxes-block" id="postions-block">
-        <h1>Examples are helpful to understand flex-grow, flex-srink, flex-basis and flex property</h1>
+        <h1>Examples to understand flex-srink, flex-grow, flex-basis and flex property</h1>
         <div class="flex-container">
-            <div class="align-center">flex-shrink is used to shrink the child items, By default flex-shrink value is 1.<br/> In the below example, All items are given flex-shrink value as 0, for item-1 we gave value as 1 so it will shrink and for item-3 value is 2 so it will shrink twice as item-1. <br />Try reducing/increasing the window size to see above effect.
+
+
+            <!-- flex-shrink -->
+
+
+            <div class="align-center">
+                <h1>flex-shrink</h1>
+                flex-shrink is used to shrink the child items depending on the 'space available', By default flex-shrink
+                value is
+                1.<br /> In the below example, All items are given flex-shrink value as 0, for item-1 we gave value as 1
+                so it will shrink and for item-3 value is 2 so it will shrink twice as item-1. <br />Try
+                reducing/increasing the window size to see above effect.
                 <br />
                 <br />
                 <table>
@@ -170,6 +181,95 @@
                 <div class="item item-2">Item 2</div>
                 <div class="item item-3">Item 3</div>
             </div>
+
+            <hr>
+
+            <!-- flex-grow -->
+            <div class="align-center">
+                <h1>flex-grow</h1>
+
+                flex-grow is to make child items to increase size and occupy the left over space in the parent width. By
+                default value is 0.
+                <br />
+                In the below example, All items are given flex-grow value as 0, for item-1 the flex-grow value is 2 and
+                for item-2 flex-grow value is 1, so item-1 will grow twice as item-2 and will occupy the remaining space
+                of the parent container.
+                <br />
+                Try reducing/increasing the window size to see above effect.
+                <br />
+                <br />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 (Default)</td>
+                            <td>Will not grow</td>
+                        </tr>
+                        <tr>
+                            <td>1 </td>
+                            <td>Items will grow</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Will grow as twice much as compared to others</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div class="second-container">
+                <div class="item item-1">Item 1</div>
+                <div class="item item-2">Item 2</div>
+                <div class="item item-3">Item 3</div>
+            </div>
+
+            <hr>
+
+            <!-- flex-basis -->
+
+            <div class="align-center">
+                <h1>flex-basis</h1>
+                <br />
+                <br />
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 (Default)</td>
+                            <td>Will not grow</td>
+                        </tr>
+                        <tr>
+                            <td>1 </td>
+                            <td>Items will grow</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Will grow as twice much as compared to others</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div class="third-container">
+                <div class="item item-1">Item 1</div>
+                <div class="item item-2">Item 2</div>
+                <div class="item item-3">Item 3</div>
+            </div>
+
         </div>
     </div>
 
