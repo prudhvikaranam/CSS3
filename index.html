@@ -18,7 +18,7 @@
     <hr />
 
     <div class="containers-checkboxes">
-        <h2>View in Deaktop/Laptops to better understand and playaround the concepts</h2>
+        <h2>View in Desktop/Laptops to better understand and playaround the concepts</h2>
         <label>
             <input type="checkbox" name="postions" value="postions" id="postionsInputCheckbox"
                 onchange="onChangeContainer('postions')">
@@ -236,6 +236,11 @@
 
             <div class="align-center">
                 <h1>flex-basis</h1>
+                flex-basis is used to size the child items, By default value is auto i.e., size would be based on the
+                content along with width and height if any.
+                <br />
+                In the below example, All items are given flex-basis value as auto, for item-1 value is 300px and since
+                item-2 and item-3 values will be auto it will size as per the content only <br /> but if we give any height or width it will size based on that content adding width and height to the item.
                 <br />
                 <br />
                 <table>
@@ -247,18 +252,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>0 (Default)</td>
-                            <td>Will not grow</td>
+                            <td>auto (Default)</td>
+                            <td>Will be sized as per the content</td>
                         </tr>
                         <tr>
-                            <td>1 </td>
-                            <td>Items will grow</td>
+                            <td>300px </td>
+                            <td>Will be sized to 300px</td>
                         </tr>
 
-                        <tr>
-                            <td>2</td>
-                            <td>Will grow as twice much as compared to others</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
